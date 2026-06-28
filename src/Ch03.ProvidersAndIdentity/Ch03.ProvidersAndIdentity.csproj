@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MasteringAgentFramework.Ch03.ProvidersAndIdentity</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,21 @@
+<Project>
+  <PropertyGroup>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.Agents.AI" Version="1.6.1" />
+    <PackageVersion Include="Microsoft.Agents.AI.Abstractions" Version="1.6.1" />
+    <PackageVersion Include="Microsoft.Agents.AI.OpenAI" Version="1.6.1" />
+    <PackageVersion Include="Microsoft.Agents.AI.Foundry" Version="1.6.1-preview.260514.1" />
+    <PackageVersion Include="Azure.AI.OpenAI" Version="2.1.0" />
+    <PackageVersion Include="Azure.AI.Projects" Version="2.1.0-beta.1" />
+    <PackageVersion Include="Azure.Identity" Version="1.21.0" />
+    <PackageVersion Include="Microsoft.Extensions.AI" Version="10.5.1" />
+    <PackageVersion Include="Microsoft.Extensions.AI.OpenAI" Version="10.5.1" />
+    <PackageVersion Include="Microsoft.Extensions.VectorData.Abstractions" Version="9.7.0" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="8.0.0" />
+    <PackageVersion Include="Microsoft.SemanticKernel.Connectors.InMemory" Version="1.60.0-preview" />
+  </ItemGroup>
+</Project>

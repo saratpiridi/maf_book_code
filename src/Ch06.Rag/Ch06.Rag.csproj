@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>MasteringAgentFramework.Ch06</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Agents.AI" />
+    <PackageReference Include="Microsoft.Agents.AI.OpenAI" />
+    <PackageReference Include="Azure.AI.OpenAI" />
+    <PackageReference Include="Azure.Identity" />
+    <PackageReference Include="Microsoft.Extensions.AI" />
+    <PackageReference Include="Microsoft.Extensions.AI.OpenAI" />
+    <PackageReference Include="Microsoft.Extensions.VectorData.Abstractions" />
+    <PackageReference Include="Microsoft.SemanticKernel.Connectors.InMemory" />
+  </ItemGroup>
+
+</Project>

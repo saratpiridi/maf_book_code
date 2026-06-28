@@ -1,0 +1,22 @@
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+project.lock.json
+project.assets.json
+artifacts/
+TestResults/
+*.nupkg
+*.snupkg
+
+# User secrets and local environment
+secrets.json
+*.secrets.json
+.env
+.env.*
+!.env.template
+**/session-state.json
