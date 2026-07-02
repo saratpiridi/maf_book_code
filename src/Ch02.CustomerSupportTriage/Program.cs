@@ -12,8 +12,7 @@ Identify the issue type, urgency, customer sentiment, and next best action.
 Keep replies concise, practical, and limited to the support domain.
 """;
 
-ChatClientAgent triageAgent = chatClient.AsAIAgent(instructions, name: "TriageAgent");
-AIAgent agent = triageAgent;
+AIAgent agent = chatClient.AsAIAgent(instructions, name: "TriageAgent");
 
 // ===== Listing 2-2: Single turn =====
 AgentResponse singleTurnResponse = await agent.RunAsync(

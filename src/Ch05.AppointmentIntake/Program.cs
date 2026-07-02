@@ -41,7 +41,9 @@ static async Task RunLevel2PersistAndRestoreAsync(AIAgent agent, AgentSession se
     Console.WriteLine("===== Level 2: Persist and restore =====");
 
     JsonElement saved = await agent.SerializeSessionAsync(session);
-    string statePath = Path.Combine(Directory.GetCurrentDirectory(), "src", "Ch05.AppointmentIntake", "session-state.json");
+    string stateDir = Path.Combine(Directory.GetCurrentDirectory(), "src", "Ch05.AppointmentIntake");
+    Directory.CreateDirectory(stateDir);
+    string statePath = Path.Combine(stateDir, "session-state.json");
 
     await File.WriteAllTextAsync(statePath, saved.GetRawText());
     Console.WriteLine($"Saved session state to {statePath}");

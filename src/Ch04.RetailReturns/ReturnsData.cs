@@ -52,10 +52,10 @@ internal static class ReturnsTools
 
 internal static class ReturnsData
 {
-    private static readonly List<ReturnRequest> ReturnRequests = [];
+    private static readonly List<ReturnRequest> _returnRequests = [];
     private static int _nextReturnNumber = 5001;
 
-    private static readonly IReadOnlyList<Order> Orders =
+    private static readonly IReadOnlyList<Order> _orders =
     [
         new(
             "ORD-1001",
@@ -86,7 +86,7 @@ internal static class ReturnsData
 
     public static Order? FindOrder(string orderId)
     {
-        return Orders.FirstOrDefault(order => string.Equals(order.OrderId, orderId, StringComparison.OrdinalIgnoreCase));
+        return _orders.FirstOrDefault(order => string.Equals(order.OrderId, orderId, StringComparison.OrdinalIgnoreCase));
     }
 
     public static EligibilityResult CheckEligibility(string orderId, string itemId)
@@ -124,7 +124,7 @@ internal static class ReturnsData
     {
         string returnId = $"RET-{_nextReturnNumber++}";
         ReturnRequest request = new(returnId, orderId, itemId, reason, DateTimeOffset.UtcNow);
-        ReturnRequests.Add(request);
+        _returnRequests.Add(request);
         return request;
     }
 }
