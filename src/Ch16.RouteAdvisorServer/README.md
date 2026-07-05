@@ -3,6 +3,8 @@
 This project exposes a small RouteAdvisor agent over the A2A protocol on a
 fixed local URL.
 
+Start this server before running the RouteAdvisor client.
+
 Run from the repository root:
 
     dotnet run --project ./src/Ch16.RouteAdvisorServer/Ch16.RouteAdvisorServer.csproj

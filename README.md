@@ -38,6 +38,17 @@ A clean run means your environment matches the book's. You can also just run
 | 5 | src/Ch05.AppointmentIntake | An agent with memory |
 | 6 | src/Ch06.Rag | An agent grounded in your documents (RAG) |
 | 7 | src/Ch07.ClaimsIntake | An agent that asks a human before acting |
+| 8 | src/Ch08.ComplianceAgent, src/Ch08.ComplianceMcpServer | An agent that uses tools over MCP, plus an MCP server |
+| 9 | src/Ch09.PolicyExpertSkill | An agent that draws on a packaged skill |
+| 10 | src/Ch10.DocumentPipeline | A sequential multi-step workflow |
+| 11 | src/Ch11.ResearchSynthesis, src/Ch11.ItRouting | Concurrent fan-out/fan-in and handoff routing |
+| 12 | src/Ch12.MarketAssessmentGroupChat, src/Ch12.MarketAssessmentMagentic | Group chat and Magentic orchestration |
+| 13 | src/Ch13.TransactionGuardrails | Middleware and input/output guardrails |
+| 14 | src/Ch14.LogisticsObservability | An observable agent traced with OpenTelemetry |
+| 15 | src/Ch15.LogisticsEvaluation | Evaluating an agent with deterministic and LLM-judge tests |
+| 16 | src/Ch16.RouteAdvisorServer, src/Ch16.RouteAdvisorClient | One agent calling another over A2A |
+
+Chapters 1 and 17 and the appendix are discussion chapters with no code project of their own.
 
 Shared connection and helper code lives in `src/Shared`. Each chapter project has
 its own README mapping files to the book's listings.
@@ -45,6 +56,9 @@ its own README mapping files to the book's listings.
 ## A Note On Cost And Preview Packages
 
 The samples call a real, paid model. The amounts are small, but they are real, so
-sign out or remove deployments you are not using. A few chapters use preview
-packages (the native Foundry path and the in-memory vector store); those are
-flagged in the relevant chapters and pinned in `Directory.Packages.props`.
+sign out or remove deployments you are not using. Several chapters use preview
+packages: the native Foundry path (Chapter 3), the in-memory vector store
+(Chapter 6), the Azure Monitor exporter (Chapter 14), the evaluation libraries
+(Chapter 15), and the A2A protocol and hosting integration (Chapter 16). Each is
+flagged in the relevant chapter and pinned to an exact version in
+Directory.Packages.props.
